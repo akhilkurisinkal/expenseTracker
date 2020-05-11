@@ -35,13 +35,12 @@ function saveTransaction()
     console.log(allTransactionsArray);
     if(transactionObject.type == "expense")
     {
-        totalExpense = totalExpense + transactionObject.amount;
+        balanceAmount = balanceAmount - transactionObject.amount;
     }
     if(transactionObject.type == "income")
     {
-        totalIncome = balanceAmount + transactionObject.amount;
+        balanceAmount = balanceAmount + transactionObject.amount;
     }
-    balanceAmount = balanceAmount-totalExpense;
 }
 function viewTransactions()
 {
