@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Lora|Montserrat|Open+Sans|Playfair+Display|Poppins|Roboto|Source+Code+Pro|Source+Sans+Pro|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="root" class="root">
+        <div id="topDiv" class="topDiv">
+            <div id="topMenu" class="topMenu">
+                <div id="allButton" class="col-sm-2 col-md-2 topMenuInner activeButton">All</div>
+                <div id="expenseButton" class="col-sm-5 col-md-5 topMenuInner expensem">Expense</div>
+                <div id="incomeButton" class="col-sm-5 col-md-5 topMenuInner incomem">Income</div>
+            </div>
+            <div id="balanceAmountLabel" style="margin-top: 40px;font-weight: 500;">
+                Current balance &nbsp <img src="images/10.png">
+            </div>
+            <div id="balanceAmount" style="margin-top:20px;">
+                <h1 style="font-size: 40px;font-family:'Source Serif Pro';font-weight: 800;">Rs 0</h1>
+            </div>
+        </div>
+        <div id="bottomDiv" class="bottomDiv">
+            <p style="color:#888;text-align:center;">Breakdown for <span style="color:#000";>this month</p>
+            <div id="bottomList" style="height:100%;overflow:scroll;">
+            </div>
+        </div>
+    </div>
+    <div id="mainNav" class="mainNav">
+        <div id="homeButton" class="col-sm-3 col-md-3 nmenu"><i class="fa fa-home" aria-hidden="true"></i></div>
+        <div id="addButton" class="col-sm-3 col-md-3 nmenu"><i class="fa fa-plus" aria-hidden="true"></i></div>
+        <div id="statButton" class="col-sm-3 col-md-3 nmenu"><i class="fa fa-pie-chart" aria-hidden="true"></i></div>
+        <div id="settingsButton" class="col-sm-3 col-md-3 nmenu"><i class="fa fa-cog" aria-hidden="true"></i></div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/views.js"></script>
+</body>
+</html>
