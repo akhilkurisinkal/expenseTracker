@@ -29,7 +29,7 @@ function saveTransaction()
     transactionObject.year = date.getFullYear();
     transactionObject.category = document.querySelector("#transactionCategory").value;
     transactionObject.description = document.querySelector("#transactionDescription").value;
-    transactionObject.amount = document.querySelector("#transactionAmount").value;
+    transactionObject.amount = parseInt(document.querySelector("#transactionAmount").value, 10);
     idCounter++;
     allTransactionsArray.push(transactionObject);
     console.log(allTransactionsArray);
